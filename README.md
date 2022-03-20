@@ -1,8 +1,12 @@
 # go-create
 
-A simple cross-compilation wrapper around `go build`.
+A simple, concurrent cross-compilation wrapper around `go build`.
 
 ## Usage
+
+[![asciicast](https://asciinema.org/a/pZEyWocq2RhoJeb44AE5ggRKl.svg)](https://asciinema.org/a/pZEyWocq2RhoJeb44AE5ggRKl)
+
+### Explanation
 
 ```sh
 go-create --name NAME --file main.go --compress --output=builds --exclude js android
