@@ -92,12 +92,12 @@ func init() {
 	flag.Parse()
 	osList = flag.Args()
 
-	fc.ErrNComp(*name, "", "Name must be defined.")
+	fc.ErrNComp(*name, "", "Name must be defined")
 
 	_, err := os.Stat(*file)
-	fc.ErrCheck(err, fmt.Sprintf("File %s does not exist.", *file))
+	fc.ErrCheck(err, fmt.Sprintf("File %s does not exist", *file))
 
-	fc.ErrNComp(*output, "", "Output must be defined.")
+	fc.ErrNComp(*output, "", "Output must be defined")
 
 	if _, err := os.Stat(*output); errors.Is(err, os.ErrNotExist) {
 		err := os.MkdirAll(*output, os.ModePerm)
